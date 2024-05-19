@@ -1151,4 +1151,12 @@ a:focus{
         padding-left: 100px;
      }
     
+     .hero__section__container {
+        max-width: 250px;
+        width: 100%;
+     }
+
+     .what-we-do-section {
+        dis
+     }
 }
