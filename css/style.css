@@ -1157,6 +1157,8 @@ a:focus{
      }
 
      .what-we-do-section {
-        dis
+        display: flex;
      }
+
+     .ou
 }
