@@ -27,7 +27,8 @@ html {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -39,9 +40,12 @@ img {
 
 /* Header section style */
 .header {
+    overflow-x: hidden;
     display: flex;
     border-bottom: 1px solid var(--border-color);
     flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1200px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -70,7 +74,8 @@ img {
     font-family: var(--secondary-font);
     line-height: 31px;
     letter-spacing: 0.03em;
-    padding-left: 40px;
+    position: absolute;
+    left: 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,9 +85,8 @@ img {
     display: inline-block;
     list-style: none;
     gap: 20px;
-    margin-left: -40px;
+    margin-left: 60px;
     font-weight: 500;
-    
 }
 
 .first_list_header li{
@@ -181,15 +185,16 @@ a:focus{
 
 /* Portiunea principala a paginii */
 .title {
-    font-size: 44px;
+    font-size: 22px;
     text-align: center;
     background-image: linear-gradient(#00000020, #2f303a40),
     url(../images/hero-section-bg-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
-    line-height: 1.5;
-    letter-spacing: 2px;
+    width: 100%;
+    max-width: 1200px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
     color: var(--white);
     text-shadow: 2px 2px 2px var(--black);
     padding-top: 182px;
@@ -201,19 +206,25 @@ a:focus{
     font-size: 16px;
     background-color: var(--blue);
     color: var(--white);
-    line-height: 2;
-    border-radius: 10px;
-    border-color: var(--blue);
-    padding: 20px 10px;
-    letter-spacing: 2px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 5px 5px 32px -4px var(--black);
+    letter-spacing: 0.06em;
     margin-top: 30px;
     cursor: pointer;
+    width: 200px;
+    height: 50px;
   }
 
   /* Hero-section */
 .hero__section {
+    overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .hero__section__svg {
@@ -224,7 +235,7 @@ a:focus{
 .hero__section__background {
     text-align: center;
     background-color: var(--lightgray);
-    width: 230px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     padding-top: 25px;
@@ -232,14 +243,17 @@ a:focus{
   
 .hero__section__title {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: Roboto;
-    line-height: 16.41px;
+    line-height: 24px;
     letter-spacing: 0.03em;
+    text-align: center;
  } 
 
  .hero__section__container {
-    width: 270px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
  }
 
  .hero__section__text {
@@ -247,11 +261,16 @@ a:focus{
     font-weight: 400;
     line-height: 24px;
     padding-top: 10px;
-    color: var(--gray); 
+    color: var(--gray);
+    text-align: justify;
 }
 
 
 /* What we do section */
+.what-we-do-section {
+    display: none;
+}
+
 .what__we__do__images {
     display: flex;
     gap: 30px;
@@ -295,19 +314,15 @@ a:focus{
 
 .our__team {
     background-color: var(--lightgray);
-    margin-left: -32px;
-    margin-right: -32px;
-    padding-bottom: 86px;
-    padding-top: 92px;
     margin-bottom: -94px;
+    margin-top: -188px;
 }
 
 .our__team__members {
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    height: 428px;
 }
 
 .team__social__list {
@@ -353,24 +368,29 @@ a:focus{
 }
 
 .our__team__title {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: auto;
+    letter-spacing: 0.03em;
     text-align: center;
     text-shadow: 2px 2px 2px var(--shadow);
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 60px;
 }
 
 .containers {
     border-radius: 5px;
     background-color: var(--white);
     box-shadow: 1px 2px 1px var(--shadow);
-    width: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .container__title {
     font-size: 16px;
     text-align: center;
     font-weight: 500;
-    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    line-height: auto;
     color: var(--black);
     margin-top: 30px;
     margin-bottom: 10px;
@@ -402,6 +422,7 @@ a:focus{
 
 .regular__customers__list  {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     list-style: none;
     justify-content: center;
@@ -442,17 +463,22 @@ a:focus{
 
     /* Footer section */
 .footer {
+    overflow-x: hidden;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--darkgray);
+    text-align: center;
     margin-top: -94px;
     padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 100px;
     gap: 70px;
 }
 .footer__container {
     padding-bottom: 28px;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
 }
+
 #footer__logo {
     font-family:var(--secondary-font);
     font-size: 26px;
@@ -494,7 +520,7 @@ a:focus{
     color: var(--white);
     font-size: 14px;
     padding-bottom: 20px;
-    padding-top: 10px;
+    letter-spacing: 0.03em;
 }
 
 .footer__social__list {
@@ -522,6 +548,10 @@ a:focus{
     background-color: var(--blue);
 }
 
+.footer__social {
+    margin: 0 auto;
+}
+
 .footer__social__item {
     width:44px;
     height: 44px;
@@ -532,20 +562,21 @@ a:focus{
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--white);
+    padding-left: 20px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    line-height: auto;
 }
 
-.footer-form {
-    display: flex;
-    gap: 12px;
-}
 
 .footer-form__input {
-    width: 358px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 395px;
     height: 50px;
     cursor: pointer;
     outline: none;
+    margin-left: 15px;
     background-color: var(--darkgray);
     border: 1px solid var(--gray);
     border-radius: 4px;
@@ -586,6 +617,8 @@ a:focus{
     cursor: pointer;
     border: 1px solid var(--gray);
     border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 70px;
     transition-property: color, background-color, transform;
     transition-duration: 250ms, 250ms, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -607,7 +640,6 @@ a:focus{
     border-bottom: 4px solid red;
     position: absolute;
     top: 20px;
-
 }
 
 /* Portiunea principala a paginii */
@@ -717,8 +749,8 @@ a:focus{
 }
 
 .container {
-    width: 1200px;
-    max-width: 100%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -753,8 +785,8 @@ a:focus{
 }
 
   [data-modal-content] {
-    width: 528px;
-    height: 581px;
+    width: 400px;
+    height: 609px;
     background-color: var(--white);
     position: absolute;
     top: 50%;
@@ -925,14 +957,14 @@ a:focus{
 
 .js-menu-container {
     display: none;
+    background-color: #212121;
+    color: white;
 }
 
 .js-button {
-    width: 40px;
-    height: 40px;
     position: absolute;
     right: 15px;
-    top: 20px;
+    top: 30px;
     border: none;
     background-color: var(--white);
 }
@@ -945,4 +977,23 @@ a:focus{
 .js-button:hover {
     fill: var(--blue);
     background-color: var(--white);
+}
+
+.is-open {
+    display: block;
+}
+
+@media screen and (max-width: 429px) {
+    .js-open-menu {
+        display: block;
+    }
+
+    .first_list_header {
+        display: none;
+    }
+
+    .header_info {
+        display: none;
+    }
+
 }
