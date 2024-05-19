@@ -1098,7 +1098,34 @@ a:focus{
         margin: 0 auto;
      }
 
-     .regular__customers__item {
-        margin-left
+      .footer__container {
+       flex-direction: row;
+       padding-left: 89px;
+       padding-top: 35px;
+}
+
+       #Contacts {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       padding-left: 89px;
+}
+
+     .footer {
+        flex-direction: row;
+        align-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+     }
+
+     .footer__social {
+        position: absolute;
+        top: 35px;
+        right: 89px;
+     }
+
+     .footer-form__title {
+        padding-top: 50px;
+        margin: 0 auto;
      }
 }
