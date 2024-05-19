@@ -15,8 +15,6 @@
     <header class="header">
             <a href="#WebStudio" class="header__logo"><p><b><span class="header__logo__web">Web</span>Studio</b></p></a>
     <!--First list header-->
-    <div class="js-menu-container">
-        <button class="js-close-menu" type="button">&times;</button>
     <nav>  
             <ul class="first_list_header">
                 <li>
@@ -30,8 +28,35 @@
                 </li>
                 
             </ul>
-        </nav>
-    </div>
+    </nav>
+    <!--Modal js-->
+    <div class="js-menu-container">
+        <button class="js-close-menu" type="button">&times;</button>
+        <ul class="js-list">
+            <li>
+                <a href="index.html" class><span class="second__list active active">Studio</span></a>
+            </li>
+            <li>
+              <a href="portofolio.html">Portofolio</a>
+            </li>
+            <li>
+                <a href="#Contacts">Contacts</a>
+            </li>
+            <li>
+                <a href="tel:+1212-772-4150">+1212-772-4150</a>
+            </li>
+            <li>
+                <a href="mailto:info@devstudio.com"><span class="js-mail">info@devstudio.com</span></a>
+            </li>
+        </ul>
+        <ul>
+            <ul class="js__social__list">
+                <li class="js__social__item"><a href="">Instagram</a></li>
+                <li class="js__social__item"><a href="">Twitter</a></li>
+                <li class="js__social__item"><a href="">Twitter</a></li>
+                <li class="js__social__item"><a href="">Facebook</a></li>
+                <li class="js__social__item"><a href="">Linkedin</a></li>
+        </ul>
     <!--Second list header-->
     <div class="header_info">
         <a href="mailto:info@devstudio.com"><svg class="svg_header"><use href="./images/icons.svg/symbol-defs.svg#icon-envelope" width="16"/></svg>info@devstudio.com</a>
@@ -95,13 +120,31 @@
             <div class="what__we__do__images">
             <div class="what__we__do__card">
                 <p class="what__we__do__subtitle"><b>Desktop apps</b></p>
-                    <img src="./images/img-1@1x.jpg" alt="keyboard-typing-image" width="330"/></div>
+                    <img 
+                    srcset="./images/img-1@1x.jpg 1x, ./images/img-1@2x.jpg 2x" 
+                    src="./images/img-1@1x.jpg" 
+                    alt="keyboard-typing-image" 
+                    width="330"
+                    />
+            </div>
             <div class="what__we__do__card">
                 <p class="what__we__do__subtitle"><b>Mobile apps</b></p>
-                   <img src="./images/img-2@1x.jpg" alt="woman-working-from-her-phone-image" width="330"/></div>
+                   <img 
+                   srcset="./images/img-2@1x.jpg 1x, ./images/img-2@2x.jpg 2x" 
+                   src="./images/img-2@1x.jpg" 
+                   alt="woman-working-from-her-phone-image" 
+                   width="330"
+                   />
+            </div>
             <div class="what__we__do__card">
                <p class="what__we__do__subtitle"><b>Design solutions</b></p>                                
-                  <img src="./images/img-3@1x.jpg" alt="choosing-colors-from-a-pallete" width="330"/></div>
+                  <img 
+                  srcset="./images/img-3@1x.jpg 1x, ./images/img-3@2x.jpg 2x" 
+                  src="./images/img-3@1x.jpg" 
+                  alt="choosing-colors-from-a-pallete" 
+                  width="330"
+                  />
+            </div>
             </div>
             </div>
         </section>
@@ -116,7 +159,12 @@
     
                     <!--Container 1-->
                     <div class="containers">
-                        <img srcset="./images/christopher-walker@1x.jpg 450w" src="./images/christopher-walker@1x.jpg" alt="Christopher Walker imagine" width="270"/>
+                        <img 
+                        srcset="./images/christopher-walker@1x.jpg 1x, ./images/christopher-walker@2x.jpg 2x" 
+                        src="./images/christopher-walker@1x.jpg" 
+                        alt="Christopher Walker imagine" 
+                        width="270"
+                        />
                         <p class="container__title">Christopher Walker</p>
                         <p class="container__subtitle">Product Designer</p>
                         <div class="team__social">
@@ -130,7 +178,12 @@
         
                     <!--Container 2-->
                     <div class="containers">
-                        <img src="./images/kylie-evans@1x.jpg" alt="Kylie Evans imagine" width="270"/>
+                        <img 
+                        srcset="./images/kylie-evans@1x.jpg 1x, ./images/kylie-evans@2x.jpg 2x"
+                        src="./images/kylie-evans@1x.jpg" 
+                        alt="Kylie Evans imagine" 
+                        width="270"
+                        />
                         <p class="container__title">Kylie Evans</p>
                         <p class="container__subtitle">Frontend Developer</p>
                         <div class="team__social">
@@ -144,7 +197,12 @@
         
                     <!--Container 3-->
                     <div class="containers">
-                        <img src="./images/ryan-harris@1x.jpg" alt="Ryan Harris imagine" width="270"/>
+                        <img 
+                        srcset="./images/ryan-harris@1x.jpg 1x, ./images/ryan-harris@2x.jpg 2x"
+                        src="./images/ryan-harris@1x.jpg" 
+                        alt="Ryan Harris imagine" 
+                        width="270"
+                        />
                         <p class="container__title">Ryan Harris</p>
                         <p class="container__subtitle">Marketing</p>
                         <div class="team__social">
@@ -158,7 +216,12 @@
     
                         <!--Container 4-->
                     <div class="containers">
-                        <img src="./images/tyler-moore@1x.jpg" alt="Tyler Moore imagine" width="270"/>
+                        <img 
+                        srcset="./images/tyler-moore@1x.jpg 1x, ./images/tyler-moore@2x.jpg 2x"
+                        src="./images/tyler-moore@1x.jpg" 
+                        alt="Tyler Moore imagine" 
+                        width="270"
+                        />
                         <p class="container__title">Tyler Moore</p>
                         <p class="container__subtitle">UI Designer</p>
                         <div class="team__social">

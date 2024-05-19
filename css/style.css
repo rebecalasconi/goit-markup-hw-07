@@ -187,7 +187,7 @@ a:focus{
     font-size: 22px;
     text-align: center;
     background-image: linear-gradient(#00000020, #2f303a40),
-    url(../images/Header\ img@1x.jpg);
+    url(../images/header-background@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -798,7 +798,7 @@ a:focus{
     background-color: var(--white);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%,-50%) scale(1);
     padding: 40px 40px;
     transition-duration: 1s;
@@ -897,6 +897,8 @@ a:focus{
     outline: none;
     margin-top: 4px;
     border-radius: 4px;
+    max-width: 100%;
+    width: 400px;
     height: 35px;
     cursor: pointer;   
     border: 1px solid var(--modal-border);
@@ -966,21 +968,77 @@ a:focus{
 .js-menu-container {
     display: none;
     width: 100%;
-    height: 609px;
+    height: 796px;
     background-color: var(--white);
     position: absolute;
     padding: 40px 40px;
+    z-index: 1;
+    margin-top: -40px;
+}
+
+.js-list li:nth-child(3) {
+    margin-bottom: 300px;
+}
+
+.js-mail {
+    color: var(--gray);
 }
 
 .js-button {
     position: absolute;
     right: 15px;
-    top: 30px;
+    top: 0px;
     border: none;
     background-color: var(--white);
 }
 
+.js__social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 64px;
+    padding-left: 10px;
+}
+
+.js__social__list a {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--blue);
+    border-right: 1px solid var(--icons-color);
+    height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.js-list {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: auto;
+    font-weight: 700;
+    list-style: none;
+}
+
+.js-list li {
+    margin-bottom: 22px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.js-list li:hover {
+    color: var(--blue);
+}
+
+.js-list a:hover {
+    text-decoration-line: underline var(--blue);
+}
+
+.js-button:hover {
+    fill: var(--blue);
+}
+
 .js-header-svg {
+    margin-top: 40px;
     width: 24px;
     height: 16px;
     fill: var(--black);
@@ -995,9 +1053,18 @@ a:focus{
     display: block;
 }
 
+
+.js-close-menu {
+    border: none;
+    background-color: var(--white);
+    top: 25px;
+    right: 25px;
+    position: absolute;
+}
+
 @media (min-resolution: 192dpi) {
     .title {
-        background-image: url(../images/header-img@2x.jpg);
+        background-image: url(../images/header-background@2x.jpg);
     }
 }
 
@@ -1013,12 +1080,10 @@ a:focus{
     .header_info {
         display: none;
     }
-
 }
 
-
-
 @media screen and (min-width:1158px) {
-    .js-button {display: none;
+    .js-button {
+        display: none;
 }
 }
