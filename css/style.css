@@ -576,12 +576,14 @@ a:focus{
 
 .footer-form__input {
     display: flex;
+    width: 100%;
+    max-width: 420px;
     margin-left: 15px;
     align-content: center;
-    max-width: 395px;
-    width: 100%;
+    width: 420px;
     height: 50px;
     cursor: pointer;
+    margin: 0 auto;
     outline: none;
     padding: 15px;
     background-color: var(--darkgray);
@@ -1100,7 +1102,7 @@ a:focus{
 
       .footer__container {
        flex-direction: row;
-       padding-left: 89px;
+       padding-left: 130px;
        padding-top: 35px;
 }
 
@@ -1127,5 +1129,10 @@ a:focus{
      .footer-form__title {
         padding-top: 50px;
         margin: 0 auto;
+        margin-bottom: 20px;
      }
+
+    .footer-form__input {
+        max-width: 450px;
+    }
 }
