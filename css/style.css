@@ -322,6 +322,7 @@ a:focus{
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    padding-bottom: 60px;
 }
 
 .team__social__list {
@@ -332,7 +333,6 @@ a:focus{
     justify-content: center;
     padding-bottom: 30px;
 }
-
 
 .team__social__item:hover .team__social__icon {
     fill: var(--white);
@@ -576,14 +576,14 @@ a:focus{
 
 .footer-form__input {
     display: flex;
-    align-items: center;
+    margin-left: 15px;
     align-content: center;
     max-width: 395px;
     width: 100%;
     height: 50px;
     cursor: pointer;
     outline: none;
-    margin-left: 15px;
+    padding: 15px;
     background-color: var(--darkgray);
     border: 1px solid var(--gray);
     border-radius: 4px;
@@ -965,7 +965,7 @@ a:focus{
 
 .js-menu-container {
     display: none;
-    background-color: #212121;
+    background-color: var(--black);
     color: white;
 }
 
@@ -980,6 +980,7 @@ a:focus{
 .js-header-svg {
     width: 24px;
     height: 16px;
+    fill: var(--black);
 }
 
 .js-button:hover {
@@ -989,11 +990,22 @@ a:focus{
 
 .is-open {
     display: block;
+    width: 100%;
+    height: 609px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    padding: 40px 40px;
+    transition-duration: 1s;
+    box-shadow: var(--light-shadow);
+    border-radius: 4px;
 }
 
 @media (min-resolution: 192dpi) {
     .title {
-        background-image: url(../images/Header\ img@2x.jpg);
+        background-image: url(../images/header-img@2x.jpg);
     }
 }
 
@@ -1010,4 +1022,11 @@ a:focus{
         display: none;
     }
 
+}
+
+
+
+@media screen and (min-width:1158px) {
+    .js-button {display: none;
+}
 }
