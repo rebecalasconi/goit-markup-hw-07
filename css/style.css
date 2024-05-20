@@ -799,7 +799,7 @@ a:focus{
     background-color: var(--white);
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(1);
     padding: 40px 40px;
     transition-duration: 1s;
