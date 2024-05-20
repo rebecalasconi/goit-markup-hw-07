@@ -189,8 +189,6 @@ a:focus{
     url(../images/header-background@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    max-width: 1200px;
     line-height: 42px;
     letter-spacing: 0.06em;
     color: var(--white);
@@ -259,6 +257,7 @@ a:focus{
     font-weight: 400;
     line-height: 24px;
     padding-top: 10px;
+    margin-bottom: 30px;
     color: var(--gray);
     text-align: justify;
 }
@@ -274,7 +273,6 @@ a:focus{
     gap: 30px;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: -94px;
 }
 .what__we__do__title {
     font-size: 36px;
@@ -313,7 +311,7 @@ a:focus{
 .our__team {
     background-color: var(--lightgray);
     margin-bottom: -94px;
-    margin-top: -188px;
+    margin-top: -94px;
 }
 
 .our__team__members {
@@ -354,6 +352,7 @@ a:focus{
     fill: var(--icons-color);
     padding: 11px 11px;
     height: 44px;
+    width: 44px;
 }
 
 .team__social__item {
@@ -1080,6 +1079,11 @@ a:focus{
     }
 }
 
+@media screen and (min-width:429px) and (max-width:768px) {
+    .hero__section__container {
+        margin: 0 auto;
+    }
+}
 
 @media screen and (min-width:768px) {
     .js-open-menu {
@@ -1135,9 +1139,10 @@ a:focus{
     .footer-form__input {
         max-width: 450px;
     }
+    
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1158px) {
     .header_info {
         display: flex;
         flex-direction: row;
@@ -1160,5 +1165,24 @@ a:focus{
         display: flex;
      }
 
-     .ou
+     .containers {
+        width: 270px;
+        margin: 0 auto;
+     }
+
+     .our__team__members {
+        flex-wrap: nowrap;
+        margin-left: 90px;
+        margin-right: 90px;
+     }
+
+     .regular__customers__list li {
+        flex-wrap: nowrap;
+        width: 170px;
+        align-content: center;
+     }
+
+     .regular__customers__item {
+        padding: 15px 55px;
+     }
 }
